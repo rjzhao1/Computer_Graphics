@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+   </canvas><p>
+
+   <button type = "button" id = "normalOn">Normal On</button>
+   <button type = "button" id = "normalOff">Normal Off</button><p>
+   <!-- button to toggle on moving with the mouse -->
+   <button type = "button" id = "mouseButton">Move with mouse</button><p>
+   Camera Angle <input type="range" min="-180" max="180" value="0" class="slider" id="angleSlide"><p>
+
+   LightX <input type="range" min="-350" max="350" value="0" class="slider" id="lightSlideX"><p>
+   LightY <input type="range" min="-350" max="350" value="0" class="slider" id="lightSlideY"><p>
+   LightZ <input type="range" min="-350" max="350" value="0" class="slider" id="lightSlideZ"><p>
+
+
+   <h2>Animation:</h2>
+   <button type = "button" id = "animationYellowOnButton">On</button>
+   <button type = "button" id = "animationYellowOffButton">Off</button><p>
+   <button type = "button" id = "lightOn">Light On</button>
+   <button type = "button" id = "lightOff">Light Off</button><p>
+
+
+
+
+
+
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Point.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Lighting.js"></script>
+  </body>
+</html>
